@@ -6,7 +6,7 @@ namespace MaximumNumberGeneric
 {
     class CalculateMax
     {
-        public static dynamic Check<datatype>(dynamic num1 , dynamic num2 , dynamic num3)
+        public static dynamic Check<datatype>(datatype num1 , datatype num2 , datatype num3) where datatype : IComparable
         {
             if(num1.CompareTo(num2) > 0 && num1.CompareTo(num3) > 0)
             {               
