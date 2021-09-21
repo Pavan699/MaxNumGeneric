@@ -6,6 +6,14 @@ namespace MaximumNumberGeneric
 {
     class CalculateMax
     {
+        /// <summary>
+        /// Check() Generic method to handle all datatypes 
+        /// </summary>
+        /// <typeparam name="datatype">Generic datatype</typeparam>
+        /// <param name="num1">Number_One</param>
+        /// <param name="num2">Number_Two</param>
+        /// <param name="num3">Number_Three</param>
+        /// <returns></returns>
         public static dynamic Check<datatype>(datatype num1 , datatype num2 , datatype num3) where datatype : IComparable
         {
             if(num1.CompareTo(num2) > 0 && num1.CompareTo(num3) > 0)
