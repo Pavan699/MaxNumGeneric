@@ -6,6 +6,7 @@ namespace MaximumNumberGeneric
 {   
     class CalculateMax<classtype>//create the "classtype" for the class
     {
+
         dynamic num1;//class intances to store the data
         dynamic num2;
         dynamic num3;
@@ -32,11 +33,7 @@ namespace MaximumNumberGeneric
             {
                 Console.WriteLine("Maximum Value is : " + num3);
             }
-            if (num1 == num2 && num2 == num3)
-            {
-                Console.WriteLine("All Are Same : " + num1);
-            }
             Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++");
-        }           
-    }
+        }
+    }        
 }
