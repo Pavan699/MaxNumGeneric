@@ -6,7 +6,6 @@ namespace MaximumNumberGeneric
 {   
     class CalculateMax<classtype>//create the "classtype" for the class
     {
-
         dynamic num1;//class intances to store the data
         dynamic num2;
         dynamic num3;
@@ -19,7 +18,7 @@ namespace MaximumNumberGeneric
         /// <summary>
         /// Print() method to compare variables
         /// </summary>
-        public void Print()//print method to print the maximum values for Integer,Float and String
+        public void Print()//print method to print the maximum values for Integer,Float and String      
         {
             if(num1.CompareTo(num2) > 0 && num1.CompareTo(num3) > 0)
             {
