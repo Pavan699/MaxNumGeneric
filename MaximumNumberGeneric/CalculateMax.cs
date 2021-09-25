@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MaximumNumberGeneric
 {   
-    class CalculateMax<classtype>//create the "classtype" for the class
+    public class CalculateMax<classtype>//create the "classtype" for the class
     {
         dynamic num1;//class intances to store the data
         dynamic num2;
@@ -18,21 +18,24 @@ namespace MaximumNumberGeneric
         /// <summary>
         /// Print() method to compare variables
         /// </summary>
-        public void Print()//print method to print the maximum values for Integer,Float and String      
+        public dynamic Print()//print method to print the maximum values for Integer,Float and String      
         {
             if(num1.CompareTo(num2) > 0 && num1.CompareTo(num3) > 0)
             {
                 Console.WriteLine("Maximum Value is : " + num1);
+                return num1;
             }
             if (num2.CompareTo(num1) > 0 && num2.CompareTo(num3) > 0)
             {
                 Console.WriteLine("Maximum Value is : " + num2);
+                return num2;
             }
             if (num3.CompareTo(num1) > 0 && num3.CompareTo(num2) > 0)
             {
                 Console.WriteLine("Maximum Value is : " + num3);
-            }
-            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++");
+                return num3;
+            }            
+            return num1;
         }
     }        
 }

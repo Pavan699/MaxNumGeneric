@@ -11,7 +11,8 @@ namespace MaximumNumberGeneric
             Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++");
             new CalculateMax<int>(34, 156, 16).Print();            
             new CalculateMax<float>(3.8f, 1.8f, 9.4f).Print();           
-            new CalculateMax<string>("Apple","Peach","Banana").Print();           
+            new CalculateMax<string>("Apple","Peach","Banana").Print();
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++");
         }
     }
 }
